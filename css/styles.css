@@ -1,6 +1,7 @@
 header, footer{
-    background-color: darkred;
+    background-color: #00688B;
     color: white;
+    border-radius: 15px;
 }
 
 .yellow{
@@ -13,4 +14,24 @@ header {
 
 footer {
     padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p{
+    margin: 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    float: right;
+    clear: both;
+    margin-top: -100px;
+    margin-right: 12px;
+}
+
+#content{
+    width: 80%;
+    margin: 0 auto; /*This centers the content container*/
 }
