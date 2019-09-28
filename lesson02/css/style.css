@@ -1,7 +1,40 @@
 .image-size{width: 200px; height: 300px}
 body{ 
     font-family: "Mansalva" , cursive;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     
+    
+    
+}
+
+.content{
+    background-color: lightgray;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.content div{
+    margin: 10px;
+}
+
+/* Medium view */
+@media only screen and (min-width: 37.5em){
+    .content{
+        display grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+}
+
+/* Large view */
+@media only screen and (min-width: 60em) {
+
+    .content{
+        display grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
 }
