@@ -1,0 +1,45 @@
+/* html selectors */
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #00ccff;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* class selectors */
+.highlight {
+    font-weight: bold;
+}
+/* id selectors */
+#active {
+    padding: 5px;
+    background-color: white;
+    color: blue;
+}
+.scheme {
+    width: 80%;
+}
+.font1 {
+    width: 70%;
+}
+.font2 {
+    width: 70%;
+}
