@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -10,30 +11,66 @@
     <link rel="stylesheet" href="styles/large.css">
 
 </head>
+
 <body>
     <header>
-        <h1>The weather site</h1>
+        <div>
+            <h1>Leiva's Local Weather</h1>
+            <p>The most accurate weather site!</p>
+        </div>
+        <img src="images/logo.png" alt="logo">
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="#" onclick="">&#89776; Menu</a>/li>
-            <li><a href="#"></a> Home</a>/li>
-            <li class="active"><a href="#"></a>Preston</a>/li>                   
-            <li><a href="#"></a>Soda Springs</a>/li>
-            <li><a href="#"></a>Fish Haven</a>/li>
-            <li><a href="#" onclick="">&#89776; Menu</a>/li>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="#">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="#">STORM CENTER</a></li>
+            <li><a href="#">GALLERY</a></li>
+
         </ul>
-
-
-
-
     </nav>
     <main>
-        <h2>Preston</h2>
+        <h2>Preston, Idaho</h2>
+        <div>
+            <h3>HERO W/ WEATHER SUMMARY</h4>
+
+                <img src="">
+        </div>
+        <div>
+            <h3>FIVE DAY FORECAST</h3>
+            <P>Day 1</P>
+            <p>Day 2</p>
+            <P>Day 3</P>
+            <P>Day 4</P>
+            <P>Day 5</P>
+            <img src="">
+        </div>
+        <div>
+            <H3>ARTICLE</H3>
+        </div>
+        <div>
+            <h3>CONTACT INFORMATION</h3>
+            <P></P>
+
+            <map>
+                A map goes here
+            </map>
+        </div>
+
+
     </main>
     <footer>
-        $copy; <span> id="currentDate"</span>
+        <P>
+            &copy; Leiva's Local Weather | Attributions | Gerardo Leiva
+        </P>
+        <p>
+            <span id="currentDate"></span>
+        </p>
     </footer>
-    <script> src="scripts/main.js"</script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/hamburguer.js"></script>
 </body>
+
 </html>
