@@ -45,5 +45,12 @@ table th,table td {
 	height: auto;
 	float: right;
 }
+.article-section div {
+    display: flex;
+    flex-direction: row;
+}
+.article-section p {
+	width: 50%;
+}
 }
 
