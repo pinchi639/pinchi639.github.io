@@ -42,14 +42,20 @@
         </section>
         <section>
             <div class="hero">
-                <img src="images/preston image.jpg" alt="preston image">
+                <!-- <img src="images/preston image.jpg" alt="preston image"> -->
+                <picture>
+                    <source media="(min-width: 45.5em)" srcset="images/cit230_franklin_large.jpg">
+                    <source media="(min-width: 35.5em)" srcset="images/cit230_franklin_medium.jpg">
+                    <img src="images/cit230_franklin_small.jpg" alt="banner" style="width:auto;">
+                  </picture>
                 <section class="stats">
                     <h2>Weather Summary</h2>
-                    <p>Currently: <span id="weather">Female</span</p> <p>Temperature: <span id="temperature">2.5</span>
-                    </p>
-                    <p>Humidity: <span id="humid">Yes</span></p>
-                    <p>Precipitation: <span id="precipitation">olrgn</span></p>
-                    <p>Wind Speed: <span id="wind">olrgn</span></p>
+                    <p>Currently: <span id="currentTemp"></span></p> 
+                    <p>Temperature: <span id="temperature">2.5</span></p>
+                    <p>Humidity: <span id="humidity">76%</span></p>
+                    <p>Precipitation: <span id="precipitation">0%</span></p>
+                    <p>Wind Speed: <span id="windSpeed"></span></p>
+                    <p>Wind Chill: <span id="windChill"></span></p>
                 </section>
             </div>
         </section>
@@ -131,6 +137,7 @@
     <script src="javascript/main.js"></script>
     <script src="javascript/hamburguer.js"></script>
     <script src="javascript/forecast.js"></script>
+    <script src="javascript/windchill.js"></script>
 </body>
 
 </html>

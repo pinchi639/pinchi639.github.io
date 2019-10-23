@@ -158,3 +158,8 @@ footer a {
     padding: 5px;
     color: darkslategray;
 }
+
+picture img{
+    max-width: 100%;
+    overflow: hidden;
+}
