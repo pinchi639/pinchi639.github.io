@@ -1,0 +1,36 @@
+h1{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+p{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1rem;
+    margin-left: 25px;
+}
+.gallerypics img{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, 20px);
+    grid-gap: 25px;
+    overflow: auto;
+    resize: horizontal;
+    margin-left: 25px;
+    margin-top: 25px; */
+    width: 50%;
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+#gallery {
+    text-align: center;
+  
+}
