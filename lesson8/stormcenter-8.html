@@ -41,7 +41,7 @@
                     <legend>Storm Reported By</legend>
                     <div>
                         <label for="fullName">Full Name:</label><br>
-                        <input type="text" id="fullName" name="fullName" required>
+                        <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]{5,}" required>
                     </div>
                     <div>
                         <label for="email">E-mail:</label><br>
@@ -93,7 +93,7 @@
                         </select>
                     </div>
                     <div>
-                        <label for="inDangerLevel">Storm Danger Level:</label><br>
+                        <label for="inDangerLevel">Are you in danger?</label><br>
                         <label for="yes"><input type="radio" id="yes" name="inDangerLevel" value="8" checked>
                             Yes</label><br>
                         <label for="maybe"><input type="radio" id="maybe" name="inDangerLevel" value="9">
