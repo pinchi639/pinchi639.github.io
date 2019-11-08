@@ -169,3 +169,74 @@ picture img{
     max-width: 100%;
     overflow: hidden;
 }
+form {
+    max-width: 700px;
+    margin: auto; 
+}
+
+.submit{
+    text-align: center;
+}
+
+/* table css */
+
+input,
+button,
+select,
+textarea {
+	padding: 0.5rem;
+	margin-bottom: .25rem;
+}
+
+input:focus {
+	box-shadow: 0 0 10px #ccc;
+}
+
+legend {
+	font-family: Arial, sans-serif;
+}
+
+input[type="button"] {
+	color: blue;
+}
+input[type="button"]:hover {
+	background-color: #ddf;
+}
+
+input:invalid {
+	border-color: #E94F3E;
+	color: #000;
+}
+input:valid {
+	background-color: #EAFFC4;
+	color: #000;
+}
+
+fieldset {
+    border: 3px solid #66CCFF;
+    background-color: #F6FFFE;
+    padding-top: 15px;
+}
+
+label{
+    color: darkblue;
+}
+
+#submit{
+    background-color: #4567aa;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#topform {
+    display: flex;
+}
+#topform fieldset{
+    width: 350px;
+}
+.submit2{
+    text-align: center;
+}
