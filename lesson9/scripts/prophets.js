@@ -3,14 +3,22 @@ const requestURL = 'https://byui-cit230.github.io/lesson/lesson9/data/latter-day
 
 
 fetch(requestURL)
-.then(response => {
-    response.json()
-    .then(
-        response => {
-            console.table(response.prophets[0]);
+    .then(response => {
+        response.json()
+            .then(
+                response => {
+                    const prophets = response.prophets;
 
-            let prophet = response.prophets[0];
-            
-            console.log(prophet.name);
-        });
-});
+                    prophets.forEach(
+                        (prophet) => {
+                            let article = document.createElement('article');
+                            let h2 = document.createElement('h2');
+
+                            h2.textContent = prophets.name + ' ' + prophets.lastname;
+
+                            article.appendChild(h2);
+
+                            document.querySelector('section.prophets').appendChild(article);
+                        })
+                });
+    });
