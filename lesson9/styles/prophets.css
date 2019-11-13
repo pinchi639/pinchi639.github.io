@@ -14,8 +14,12 @@ article div {
 
 h1 {
     text-align: center;
+    color: #004182;
 }
-
+footer {
+    text-align: center;
+    color: #004182;
+}
 img {
     max-width: 215px;
     margin-top: 6px;
