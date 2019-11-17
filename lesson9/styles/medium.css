@@ -61,9 +61,14 @@ justify-content: space-between;
 /*.grid {
     grid-template-columns: 1fr 1fr;
 }*/
-}
-#tempGrid {
+
+main #containerTowns {
     display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+}
+
+#containerTowns div{
+	width: 32%;
+	margin: 5px;
+}
 }

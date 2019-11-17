@@ -241,6 +241,23 @@ label{
     text-align: center;
 }
 
-main #tempGrid {
-    background-color: blue;
+main #containerTowns {
+    display: flex;
+    flex-direction: column;
+}
+
+ #containerTowns div {
+     background-color: lightgoldenrodyellow;
+     padding: 20px;
+ }
+
+#containerTowns img{
+    width: 100%;
+}
+#containerTowns h1 {
+    color: #4567aa;
+
+}
+.townMotto {
+    color: #1976D2;
 }
