@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Leiva's Local Weather</h1>
+            <p>The most accurate weather site!</p>
+        </div>
+        <img src="images/logo.png" alt="logo">
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="preston-7.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="#">STORM CENTER</a></li>
+            <li><a href="gallery-7.html">GALLERY</a></li>
+
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="tempGrid">
+            <article id="mainArticle1">
+                <h1>Fish Haven</h1>
+                <div>
+                    <h4 id="fishMotto"></h4>
+                </div>
+                <p>Year Founded: <span id="fishFounded"></span></p>
+                <p>Population: <span id="fishPopulation"></span></p>
+                <p>Annual Rain: <span id="fishAnnualRain"></span></p>
+                <figure>
+                    <img src="images/placeholder1200x650.jpg" data-src="images/fishimage1200x650.jpg">
+                </figure>
+            </article>
+            <article id="mainArticle2">
+                <h1>Preston</h1>
+                <div>
+                    <h4 id="prestonMotto"></h4>
+                </div>
+                <p>Year Founded: <span id="prestonFounded"></span></p>
+                <p>Population: <span id="prestonPopulation"></span></p>
+                <p>Annual Rain: <span id="prestonAnnualRain"></span></p>
+                <figure>
+                    <img src="images/placeholder1200x650.jpg" data-src="images/prestonimage1200x650.jpg">
+                </figure>
+            </article>
+            <article id="mainArticle3">
+                <h1>Soda Springs</h1>
+                <div>
+                    <h4 id="sodaMotto"></h4>
+                </div>
+                <p>Year Founded: <span id="sodaFounded"></span></p>
+                <p>Population: <span id="sodaPopulation"></span></p>
+                <p>Annual Rain: <span id="sodaAnnualRain"></span></p>
+                <figure>
+                    <img src="images/placeholder1200x650.jpg" data-src="images/sodaimage1200x650.jpg">
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+            <P>
+                &copy; Leiva's Local Weather | Attributions | Gerardo Leiva
+            </P>
+            <div>
+                <span id="currentDate"></span>
+            </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>
