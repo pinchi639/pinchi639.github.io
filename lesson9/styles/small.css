@@ -240,6 +240,7 @@ label{
 .submit2{
     text-align: center;
 }
-/*.grid {
-    grid-template-columns: 1fr;
-}*/
+
+main #tempGrid {
+    background-color: blue;
+}
