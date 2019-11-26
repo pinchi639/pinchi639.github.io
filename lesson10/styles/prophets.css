@@ -1,0 +1,45 @@
+article {
+    background-color: #004182;
+    color: #d3d3d3;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+}
+
+article div {
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #004182;
+}
+footer {
+    text-align: center;
+    color: #004182;
+}
+img {
+    max-width: 215px;
+    margin-top: 6px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgb(35, 35, 36);
+    box-shadow: 5px 5px 15px 5px lightskyblue;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 32.5em) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
