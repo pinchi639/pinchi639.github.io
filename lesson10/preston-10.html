@@ -53,10 +53,10 @@
                 <section class="stats">
                     <h2>Weather Summary</h2>
                     <p>Currently: <span id="currentTemp"></span></p>
-                    <p>Temperature: <span id="temperature">2.5</span></p>
-                    <p>Humidity: <span id="humidity">76%</span></p>
+                    <p>Temperature: <span id="temperature"></span>&deg;</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
                     <p>Precipitation: <span id="precipitation">0%</span></p>
-                    <p>Wind Speed: <span id="windSpeed"></span></p>
+                    <p>Wind Speed: <span id="windSpeed"></span>mph</p>
                     <p>Wind Chill: <span id="windChill"></span></p>
                 </section>
             </div>
@@ -74,11 +74,11 @@
                 </tr>
                 <tr>
                     <td>Forecast</td>
-                    <td id="data1">12&deg;</td>
-                    <td id="data2">13&deg;</td>
-                    <td id="data3">14&deg;</td>
-                    <td id="data4">15&deg;</td>
-                    <td id="data5">11&deg;</td>
+                    <td><span id="data1"></span>&deg;<img id="temp1" src="" alt=""></td>
+                    <td><span id="data2"></span>&deg;<img id="temp2" src="" alt=""></td>
+                    <td><span id="data3"></span>&deg;<img id="temp3" src="" alt=""></td>
+                    <td><span id="data4"></span>&deg;<img id="temp4" src="" alt=""></td>
+                    <td><span id="data5"></span>&deg;<img id="temp5" src="" alt=""></td>
                 </tr>
             </table>
         </section>
@@ -140,6 +140,7 @@
     <script src="javascript/hamburguer.js"></script>
     <script src="javascript/forecast.js"></script>
     <script src="javascript/windchill.js"></script>
+    <script src="javascript/prestonWeather.js"></script>
 </body>
 
 </html>
