@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Leiva's Local Weather</h1>
+            <p>The most accurate weather site!</p>
+        </div>
+        <img src="images/logo.png" alt="logo">
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="preston-10.html">PRESTON</a></li>
+            <li><a href="sodaSprings.html">SODA SPRINGS</a></li>
+            <li><a href="fishHaven.html">FISH HAVEN</a></li>
+            <li><a href="stormcenter-8.html">STORM CENTER</a></li>
+            <li><a href="gallery-8.html">GALLERY</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>Fish Haven, Idaho</h2>
+        <!--add hero image here-->
+        <section id="pancake" class="hidden">
+            <p>
+                Saturday = Preston Panckes in the park! 9:00 a.m. Saturday at the city hall pavillion
+            </p>
+        </section>
+        <section>
+            <div class="hero">
+                <!-- <img src="images/preston image.jpg" alt="preston image"> -->
+                <picture>
+                    <source media="(min-width: 45.5em)" srcset="images/cit230_franklin_large.jpg">
+                    <source media="(min-width: 35.5em)" srcset="images/cit230_franklin_medium.jpg">
+                    <img src="images/cit230_franklin_small.jpg" alt="banner" style="width:auto;">
+                </picture>
+                <section class="stats">
+                    <h2>Weather Summary</h2>
+                    <p>Currently: <span id="currentTemp"></span></p>
+                    <p>Temperature: <span id="temperature"></span>&deg;</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Precipitation: <span id="precipitation">0%</span></p>
+                    <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+                    <p>Wind Chill: <span id="windChill"></span></p>
+                </section>
+            </div>
+        </section>
+
+        <section id="forecast">
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                    <th id="day5"></th>
+                </tr>
+                <tr>
+                    <td>Forecast</td>
+                    <td><span id="data1"></span>&deg;<img id="temp1" src="" alt=""></td>
+                    <td><span id="data2"></span>&deg;<img id="temp2" src="" alt=""></td>
+                    <td><span id="data3"></span>&deg;<img id="temp3" src="" alt=""></td>
+                    <td><span id="data4"></span>&deg;<img id="temp4" src="" alt=""></td>
+                    <td><span id="data5"></span>&deg;<img id="temp5" src="" alt=""></td>
+                </tr>
+            </table>
+        </section>
+        <section class="article-section">
+            <h2>Article</h2>
+            <div>
+                <img src="images/article-image.jpg" alt="fishing in a good weather">
+                <p class="article-text"> ¡Oh ese sutil aplan del maligno! ¡Oh las bvanidades, y las flaquezas, y las
+                    necedades de los hombres! Cuando son cinstruidos se creen dsabios, y no escuchan el econsejo de
+                    Dios,
+                    porque lo menosprecian, suponiendo que saben por sí mismos; por tanto, su sabiduría es locura, y de
+                    nada
+                    les sirve; y perecerán. Pero bueno es ser instruido, si ahacen caso de los bconsejos de Dios..</p>
+            </div>
+        </section>
+        <section class="contact-information">
+            <h2>Contact Information</h2>
+            <div class="contact-large">
+                <p class="contact-text"><b>Address:</b> 345 S 2nd E, Rexburg, ID<br>
+                    <b>Email:</b> <a href="@leivasweather.com">leiva@getleivasweather.com</a><br>
+                    <b>Phone:</b> <a href="tel:+17025820032">(702)582-0032</a>
+                </p>
+                <p id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.793726895292!2d-111.77987118487505!3d43.818637849735644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540aff1d3dc1df%3A0x47d6e9c4a4d427d2!2s345%20S%202nd%20E%2C%20Rexburg%2C%20ID%2083440!5e0!3m2!1sen!2sus!4v1571072140339!5m2!1sen!2sus"
+                        width="300" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <P>
+            &copy; Leiva's Local Weather | Attributions | Gerardo Leiva
+        </P>
+        <div>
+            <span id="currentDate"></span>
+        </div>
+
+
+        <div>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://cdn.glitch.com/06f771da-fa8f-4eeb-90e6-11bfc4ca59e6%2FFacebook.png?v=1570340081751"
+                    alt="Facebook" /></a>
+
+            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                <img src="https://cdn.glitch.com/06f771da-fa8f-4eeb-90e6-11bfc4ca59e6%2Finstagram.png?v=1570340088269"
+                    alt="Instagram" /></a>
+
+            <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank">
+                <img src="https://cdn.glitch.com/06f771da-fa8f-4eeb-90e6-11bfc4ca59e6%2Ftwitter.png?v=1570340094304"
+                    alt="Twitter" /></a>
+
+            <!--social media -->
+        </div>
+    </footer>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/hamburguer.js"></script>
+    <script src="javascript/forecast.js"></script>
+    <script src="javascript/windchill.js"></script>
+    <script src="javascript/fishWeather.js"></script>
+</body>
+
+</html>
