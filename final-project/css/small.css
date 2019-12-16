@@ -1,0 +1,653 @@
+main {
+    display: grid;
+    /*grid-template-columns: 50% 50%;*/
+    /*grid-template-rows: 33% 33% 33%;*/
+    column-gap: 10px;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #FFF1CF;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    background-color: #FFF1CF;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+    display: flex;
+    float: left;
+    padding: 0 0 0 0;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+h1,
+.headings {
+    font-size: 30px;
+    font-family: 'Fondamento', cursive;
+    color: #263F44;
+    padding: 5px;
+    margin-left: 0;
+    position: relative;
+    /*float: left;*/
+    overflow: auto;
+}
+
+.tagline {
+    color: #002642;
+    font-size: 16px;
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+}
+
+/*End of Header*/
+
+/*Navigation Menu*/
+nav {
+    margin: 0 auto;
+    background-color: #FFF1CF;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li a:hover {
+    background-color: #015668;
+    color: #FFF1CF;
+    text-decoration: none;
+}
+
+/*nav ul li.active a {
+    background-color: #263F44;
+    color: #FFF1CF;
+}*/
+nav li a {
+    display: block;
+}
+
+nav button {
+    border: none;
+    font-size: 1.6rem;
+    background-color: transparent;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    border-left: 1px;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+
+}
+
+.navigation a {
+    display: block;
+    color: #263F44;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a.current {
+    background-color: #015668;
+    color: #FFF1CF;
+}
+
+nav ul {
+    background-color: #FFD369;
+    display: block;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.responsive li {
+    display: block;
+}
+
+/*End of Navigation*/
+/*Headings*/
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+/*h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    line-height: 5px;
+    color:#721121;
+    text-align: center;
+}*/
+/*h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;    
+    color:#721121;
+    padding: 10px;
+    margin-top: 60px;
+    text-align: center;
+}*/
+h2,
+h3,
+h4,
+h5,
+h6,
+.mapcontact {
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-weight: bold;
+    color: #263F44;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+/*End of Headings*/
+/*Paragraph Text*/
+p {
+    font-family: 'Noto Serif', serif;
+    font-size: 17px;
+    color: #263F44;
+    padding: 15px;
+    line-height: 10px;
+}
+
+/*End of paragraph text*/
+
+/*Hero Section*/
+.herobutton a {
+    text-decoration: none;
+}
+
+.hero {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 15px;
+}
+
+.heroimg {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px black dotted;
+    margin-right: 10px;
+}
+
+.herodiv p {
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    color: #263F44;
+    padding: 10px;
+    width: 90%;
+    /*font-weight: bold;*/
+    /*padding-top: 20px;*/
+    /*padding: 10px;*/
+    line-height: 30px;
+}
+
+.herothumbimg {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    align-self: center;
+    justify-items: center;
+}
+
+.herothumbimg img:hover{
+    box-shadow: 3px 3px 3px 3px #ffd800;
+}
+
+.templeopt figure:hover{
+    box-shadow: 3px 3px 3px 3px #2C7873;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    display: inline-block;
+}
+
+figcaption {
+    background-color: hsl(208, 42%, 19%, .5);
+    color: #000501;
+    text-align: center;
+    font-family: 'Noto Serif';
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+figure img {
+    vertical-align: top;
+    width: 150px;
+    height: auto;
+}
+
+/*figure figcaption {
+    border: 1px dotted blue;
+    
+}*/
+/*End of hero section*/
+
+/*Links*/
+.link {
+    text-decoration: none;
+    list-style: none;
+    color: #FFF1CF;
+}
+
+.link:hover {
+    color: #FFD800;
+}
+
+/*End of Links*/
+
+/*Contact Flex Form*/
+/*.wrapper {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #263F44;
+    margin-top: 50px;
+}*/
+.form {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin: 20px;*/
+    background-color: #FFD369;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+}
+
+/*.form p {
+    
+    font-size: 19px;
+    
+}*/
+/*.img-area {
+    width: 100%;
+
+}*/
+legend {
+    padding-top: 10px;
+}
+
+.form-text h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 20px;
+    font-family: 'Cinzel decorative', sans-serif;
+}
+
+.form-text p {
+    color: #263F44;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form-text {
+    margin: 30px 20px;
+}
+
+legend {
+    color: #263F44;
+    /*padding: 15px;*/
+    font-family: 'Cinzel decorative', sans-serif;
+    font-weight: 700;
+}
+
+label {
+    color: #263F44;
+    padding: 15px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+
+form label.req,
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea {
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+}
+
+form input.submitButton {
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF1CF;
+    background-color: #E25822;
+    border: none;
+    font-family: 'Cinzel decorative', sans-serif;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    width: 50%;
+    max-width: 150px;
+}
+
+form label.req input:required {
+    border-left: #E25822 solid 7px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+form label.req input:required:valid {
+    border-left: green solid 7px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    height: 5rem;
+    border-radius: 5px;
+}
+
+.submitdiv {
+    align-items: center;
+}
+
+/*End of contact flex form*/
+
+/*Contact Us Section*/
+.contact1 {
+    margin-bottom: 50px;
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.contact1 p {
+    text-align: center;
+}
+
+/*Reserve Button Call to Action*/
+.reserve {
+    margin-top: 100px;
+    /*display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: span 2;*/
+}
+
+.reserve a {
+    text-decoration: none;
+}
+
+button {
+    display: grid;
+    border-radius: 10px;
+    background-color: #E25822;
+    color: #FFF1CF;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    justify-items: center;
+    max-width: 100px;
+    max-height: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    font-family: 'Cinzel decorative', sans-serif;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    width: 50%;
+    max-width: 150px;
+}
+
+button:hover {
+    background-color: #015668;
+    color: #FFF1CF;
+}
+
+/*End of Reserve Button Call to Action*/
+
+/*Contact Areas - Home Page*/
+.contact1,
+.contact2,
+.contact3,
+.contact4 {
+    display: grid;
+    grid-column: 1;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+img.socialIcon {
+    width: 50px;
+    height: auto;
+    padding: 20px;
+}
+
+/*End of Contact Areas - Home Page*/
+/*Reservation Page*/
+.amenities ul li {
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+}
+
+.amenities,
+.resform,
+.rescontact,
+.resmap,
+.ressocialmedia {
+    display: grid;
+    grid-column: 1;
+    margin: 0 auto;
+}
+
+.resh2 {
+    grid-column: span 2;
+}
+
+.rescontact {
+    text-align: center;
+}
+
+.resthumbimg {
+    display: grid;
+    justify-items: center;
+}
+
+.resform,
+.rescontact,
+.ressocialmedia {
+    grid-column: span 2;
+}
+
+/*End of Reservation Page*/
+
+/*Confirmation Page*/
+.wholeconfpage {
+    text-align: center;
+    justify-items: center;
+}
+
+/*End of Confirmation Page*/
+
+/*Footer*/
+footer {
+    background-color: #263F44;
+    color: #FFF1CF;
+    font-family: 'Noto Serif', serif;
+    /*font-weight: bold;*/
+    font-size: 15px;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+    line-height: 25px;
+}
+
+/*End of Footer*/
+/*Temple Page*/
+.templesection {
+    grid-column: span 2;
+    width: 90%;
+    grid-row: 1;
+    margin: 0 auto;
+}
+
+.templecards {
+    display: grid;
+    max-width: 90%;
+    /*grid-template-columns: 1fr;*/
+    text-align: center;
+    column-gap: 10px;
+    font-family: 'Noto Serif', serif;
+    margin: 0 auto;
+}
+
+.templecards section {
+    border: #263F44 solid 1px;
+    width: 100%;
+    height: auto;
+    background-color: #FFD369;
+}
+
+.templecards p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.templecards img {
+    width: 150px;
+    height: auto;
+    box-shadow: black 0 0 10px;
+}
+
+.weathersummaryB,
+.weathersummaryM,
+.weathersummaryN,
+.weathersummaryW {
+    background-color: #263F44;
+    padding: 5px;
+    max-width: 60%;
+    margin: 0 auto;
+    /*top: 25px;
+    left: 25px;*/
+    /*position: absolute;*/
+    box-shadow: inset 0 0 2px 2px #FFD369;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*.weathersummary span:nth-child(even){
+    padding-left: 5px;
+}*/
+.weathersummary1 {
+    color: #FFF1CF;
+    font-size: 15px;
+    padding: 5px;
+    /*line-height: 1px;*/
+    font-family: 'Noto Serif', serif;
+    text-align: right;
+}
+
+.weathersummary2 {
+    color: #FFD369;
+    font-size: 15px;
+    padding: 5px;
+    /*line-height: 1px;*/
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+}
+
+.weathersummaryB p,
+.weathersummaryM p,
+.weathersummaryN p,
+.weathersummaryW p {
+    color: #FFF1CF;
+    font-size: 15px;
+    /*line-height: 1px;*/
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    grid-column-end: 2 span;
+    /*border-bottom: 1px solid #e59500;*/
+}
+
+/*Contact Page*/
+.reservecontact {
+    margin-top: 25px;
+}
+
+.reservecontact a {
+    text-decoration: none;
+}
+
+/*Terms of Use Page*/
+.terms {
+    display: grid;
+    grid-column-start: span 2;
+}
+
+.termuseh {
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-weight: bold;
+    color: #263F44;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.terms p {
+    font-family: 'Noto Serif', serif;
+    font-size: 17px;
+    color: #263F44;
+    padding: 15px;
+    line-height: 30px;
+}
