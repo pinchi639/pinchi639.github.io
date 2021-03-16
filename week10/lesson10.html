@@ -12,9 +12,13 @@
 
         <h3>Notes</h3>
         <ol>
+                <h2>Validating Forms?</h2>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+                Form validation is something you find on most websites where you either sign up for
+                or create an account for. You will need to provide things such as emails or passwords.
+                Form validation makes sure that the user inputs the right things in the right places.
+                For example, if you are entering your email, you will always have a <i>@</i> and <i>.com</i>
+                in the email.
             </li>
 
         </ol>
@@ -22,17 +26,23 @@
         <h3>Questions</h3>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+              No questions this week.
             </li>
         </ol>
 
         <h3>Code Examples</h3>
+        <h2>
+            Little example below..
+        </h2>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
-            </li>
+                    <form>
+                            <label for="email">Email:</label>
+                                <input id="email" type="email" name="email" placeholder="your email" required="email">
+                            <label for="Password">Password:</label>
+                                <input id="Password" type="password" name="Password" placeholder="your password" required="Password" pattern=".{5,10}" required title="5-10 Characters">
+                                <input type="submit" name="submit">
+                        </form>
         </ol>
         
 </body>

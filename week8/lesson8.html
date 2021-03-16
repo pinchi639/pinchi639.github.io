@@ -13,8 +13,15 @@
         <h3>Notes</h3>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+                CSS transitions allow you to animate something that may typically happen immediately.
+                You can customize how it is animated and for how long.
+
+            </li>
+            <li>
+                We first target the div in order to style it and give it a red color.
+                When we target it again but use the :hover, it makes it transition to blue
+                when the user hovers over it. The transition also has a clarification of 2s
+                so that the transition happens over a span of 2 seconds.
             </li>
 
         </ol>
@@ -22,16 +29,27 @@
         <h3>Questions</h3>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+                How did you do the page animations going from one screen to another with
+                the pokiAPI demo you showed in class?
             </li>
+
         </ol>
 
         <h3>Code Examples</h3>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+                <p>
+                    div { <br>
+                    width: 100px; <br>
+                    height: 100px; <br>
+                    color: red; <br>
+                    transition: color 2s; <br>
+                    } <br>
+
+                    div:hover { <br>
+                    color: blue; <br>
+                    }
+                </p>
             </li>
         </ol>
 </body>
