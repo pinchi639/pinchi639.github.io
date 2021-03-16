@@ -4,22 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Activity W04</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="styles/teamActivity4.css">
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <div><a href="../">Back ></a></div>
-        <table>
-            <tbody></tbody>
-        </table>
-        <div id="div1"></div>
-    </main>
-    <footer></footer>
+    
 
-    <script src="scripts/teamActivity4.js" type='module'></script>
+
+    <header>
+        <h1 style="text-align:center;">Team Activity Week 4</h3>
+    </header>
+
+
+    <main>
+        
+        <div id="board" class="board">
+
+            <!-- row one -->
+            <div id="A1" class="item a 1 diagonal1"></div>
+            <div id="A2" class="item a 2"></div>
+            <div id="A3" class="item a 3 diagonal2"></div>
+
+            <!-- row two -->
+            <div id="B1" class="item b 1"></div>
+            <div id="B2" class="item b 2 diagonal1 diagonal2"></div>
+            <div id="B3" class="item b 3"></div>
+
+            <!-- row three -->
+            <div id="C1" class="item c 1 diagonal2"></div>
+            <div id="C2" class="item c 2"></div>
+            <div id="C3" class="item c 3 diagonal1"></div>
+
+            
+        </div>
+        
+        
+        <button id="reset" class="reset">Reset</button>
+        
+
+    </main>
+
+    <footer>
+        &copy; 2020 | Portfolio | Gerardo Leiva
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="scripts/teamActivity4.js"></script>
 </body>
 
 </html>
