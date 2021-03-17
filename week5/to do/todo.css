@@ -4,7 +4,7 @@
 
 :root {
     --lightGray : #435be2;
-    --lightBlue : #7ca1f1;
+    --lightBlue : #7cccf1;
 }
 
 h1 {
@@ -100,7 +100,7 @@ ul {
 #filterList {
     text-align: center;
     padding: 16px;
-    background: rgb(101, 199, 178);
+    background: rgb(101, 168, 199);
     margin: 10px 0 10px 0;
 }
 #filterList input[type="button"]{
