@@ -17,6 +17,17 @@
                 Adding methods to an object super easy without having to create a class.
                 Use Objects to be prepared for the todo list assignment
             </li>
+            <li>
+                Events: events are actions or occurrences that happen in the system you are programming
+                Events are fired inside the browser window, and tend to be attached to a specific item that resides in
+                it — this might be a single element, set of elements, the HTML document loaded in the current tab, or
+                the entire browser window.
+            </li>
+
+            <li>
+                The earliest method of registering event handlers found on the Web involved event handler HTML
+                attributes
+            </li>
 
         </ol>
 
@@ -30,8 +41,24 @@
         <h3>Code Examples</h3>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+                const btn = document.querySelector('button');<br>
+                <br>
+                function random(number) {<br>
+                return Math.floor(Math.random() * (number+1));<br>
+                }<br>
+                <br>
+                btn.onclick = function() {<br>
+                const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';<br>
+                document.body.style.backgroundColor = rndCol;<br>
+                }<br>
+            </li><br>
+            <li>
+                const btn = document.querySelector('button');<br>
+
+                btn.onclick = function() {<br>
+                const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';<br>
+                document.body.style.backgroundColor = rndCol;<br>
+                }<br>
             </li>
         </ol>
 

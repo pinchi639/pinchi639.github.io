@@ -5,35 +5,58 @@
 
 <body>
     <h1>WDD 330 portfolio</h1>
-    <h3>Week 06</h3>
+    <h3>Week 07</h3>
 
     <ul>
 
 
         <h3>Notes</h3>
         <ol>
-            <li>It can update a web page without reloading the page</li>
-            <li>Request data from a server - after the page has loaded</li>
-            <li>Receive data from a server - after the page has loaded</li>
-            <li>Send data to a server - in the background</li>
-
+            <li> AJAX is a set of web development techniques using many web technologies on the client-side to create
+                asynchronous web applications.</li>
+            <li>NEVER FORGET TO SINCRONIZE CHANGES TO GITHUB!!!!</li>
+            <li>Ajax is not a single technology, but rather a group of technologies. </li>
+            <li>
+                Sometimes async = false are used for quick testing.
+            </li>
+            <li>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar
+                to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to
+                qualify as a function, it should take some input and return an output where there is some obvious
+                relationship between the input and the output. To use a function, you must define it somewhere in the
+                scope from which you wish to call it</li>
         </ol>
 
         <h3>Questions</h3>
         <ol>
             <li>
-                What's the most common way to request or send data to a server?
+                Is AJAX the same as Javascript?
             </li>
         </ol>
 
         <h3>Code Examples</h3>
         <ol>
             <li>
-                Callbacks are quite interesting. Is it possible to invoke as many callbacks
-                as necessary in the same function? Can any callbacks be used inside other callbacks?
+                / Initialize the HTTP request.<br>
+                var xhr = new XMLHttpRequest();<br>
+                xhr.open('GET', 'send-ajax-data.php');<br>
+            </li><br>
+            <li>
+                Function Example:<br>
+                function myFunc(theObject) { <br>
+                    theObject.make = 'Toyota';<br>
+                  }<br>
+                  <br>
+                  var mycar = {make: 'Honda', model: 'Accord', year: 1998};<br>
+                  var x, y;<br>
+                  <br>
+                  x = mycar.make; // x gets the value "Honda"<br>
+                  <br>
+                  myFunc(mycar);<br>
+                  y = mycar.make; // y gets the value "Toyota"<br>
+                                  // (the make property was changed by the function)<br>
             </li>
         </ol>
-        
+
 </body>
 
 </html>
