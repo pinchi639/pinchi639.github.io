@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+</head>
+<body>
+    <h1>Weekly Budget</h1>
+    <main>
+        <p>Enter the hours worked and expected wage per hour to see <b>after tax pay.</b></p>
+        Hours worked: <input type="text" id="worked" size="5"><br>
+        Wage per hour: <input type="text" id="wage" size="5"><br>
+        <button type="button" onclick="displayPay()">Compute Gross Pay</button>
+        <div id="output"></div>
+        <p>Enter the percentage amount for each expense. <b>Percentage amount should total 100%.</b></p>
+        <div class="getPercentages">
+            Percentage for food: <input type="text" id="food" size="5"><br>
+            Percentage for entertainment: <input type="text" id="entertainment" size="5"><br>
+            Percentage for charity: <input type="text" id="charity" size="5"><br>
+            Percentage for clothes: <input type="text" id="clothes" size="5"><br>
+            Percentage for other: <input type="text" id="other" size="5"><br>
+        </div>
+        <button type="button" onclick="getExpenses()">See budget</button>
+        <div id="expenseOutput"></div>
+        <h2>Local Storage:</h2>
+        <p id="localStorage"></p>
+        <button type="button" onclick="clearStorage()">Clear Local Storage</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

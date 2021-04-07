@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(225, 230, 211);
+    font-family: 'Mulish', sans-serif;
+}
+
+button {
+    display: block;
+}
+
+h1 {
+    color: #00a2ff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 60px;
+}
+h2 {
+    color: #00a2ff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 60px;
+}
+
+
+
+/* CLASS Selectors */
+.showChart {
+    margin-top: 2px;;
+}
+
+/* ID Selectors */
+
+#output {
+    color: #00a2ff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
